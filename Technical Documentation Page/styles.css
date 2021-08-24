@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@300;500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  line-height: 1.5;
+  
+}
+main header,
+nav header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+section p,
+nav a {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+section ol,
+section ul {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+nav {
+  padding: 15px;
+  min-width: 200px;
+  border-right: 1px solid #777;
+}
+nav a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #777;
+  transition: color 0.3s;
+  border-top: 1px solid #333;
+}
+nav a:hover {
+  color: #333;
+}
+main {
+  padding: 15px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+code pre {
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 20px;
+}
+.p-group {
+  margin-left: 20px;
+}
+.anatomy-name {
+  font-weight: 500;
+}
+.code-styling {
+  background-color: #eee;
+  padding: 2px;
+}
+.span-group {
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 20px;
+}
+@media (max-width: 576px) {
+  body {
+    flex-direction: column;
+  }
+  main {
+    overflow-y: unset;
+  }
+  nav {
+    overflow-y: scroll;
+    height: 200px;
+    width: 100%;
+  }
+}

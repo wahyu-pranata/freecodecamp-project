@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC:Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Introduction</header>
+      <a href="#What_is_Css" class="nav-link">What is CSS</a>
+      <a href="#CSS_Anatomy" class="nav-link">CSS Anatomy</a>
+      <a href="#Making_CSS_Works" class="nav-link">Making CSS Works</a>
+      <a href="#CSS_Selector" class="nav-link">CSS Selector</a>
+      <a href="#Commenting_a_Line" class="nav-link">Commenting a Line</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Css">
+        <header>What is CSS</header>
+        <p>
+          CSS (Cascading Style Sheets) is the code that styles web content. Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+        </p>
+        <p>
+          For example, this CSS selects paragraph text, setting the color to red:
+        </p>
+        <code> 
+          <pre>
+p {
+  color: red;
+}</pre>
+        </code>
+        
+      </section>
+
+      <section class="main-section" id="CSS_Anatomy">
+        <header>CSS Anatomy</header>
+        <p>
+          The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.)
+        </p>
+        <code>
+          <pre>
+p {
+  color: red;
+}</pre>
+          </code>
+          <div class="p-group">
+            <p><span class="anatomy-name">Selector </span>is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <code class="code-styling">p</code> elements).</p>
+
+            <p><span class="anatomy-name">Declaration </span>is a single rule like <code class="code-styling">color: red;</code>. It specifies which of the element's properties you want to style.</p>
+
+            <p><span class="anatomy-name">Properties</span> are ways in which you can style an HTML element. (In this example, <code class="code-styling">color</code> is a property of the <code class="code-styling">p</code> elements.) In CSS, you choose which properties you want to affect in the rule.</p>
+
+            <p><span class="anatomy-name">Property Value</span> chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</p>
+          </div>
+        
+      </section>
+
+      <section class="main-section" id="Making_CSS_Works">
+        <header>Making CSS Works</header>
+        <p>To make CSS code works, we still need to apply CSS code to our HTML document. Otherwise, the styling won't change the appearance of the HTML. </p>
+        <ol>
+          <li>Open the HTML file and paste this code to the HTML file</li>
+          <code>
+            <div class="span-group">
+              <span><<span>link</span></span>
+              <span> href="styles/style.css" rel="stylesheet"></span>
+            </div>
+          </code>
+          <li>Save the HTML file and load it in your browser. You should see all <code class="code-styling">p</code> tags with red color</li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="CSS_Selector">
+        <header>CSS Selector</header>
+        <p>
+          CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        </p>
+        <p>We can divide CSS selectors into fice categories:</p>
+        <ul>
+          <li>Simple selectors (select elements based on name, id, class)</li>
+          <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+          <li>Pseudo-class selectors (select elements based on a certain state)</li>
+          <li>Pseudo-elements selectors (select and style a part of an element)</li>
+          <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Commenting_a_Line">
+        <header>Commenting a Line</header>
+        <p>
+          Comments are used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers. A CSS comment is placed inside the <code class="code-styling"><span><<span>style></span></code>element, and starts with <code class="code-styling">/* and ends with */</code>. Example:
+        </p>
+        <code>
+          <pre>
+/* This is single-line comment */
+p {
+  color: red;
+}</pre>
+          </code>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus cum libero,
+          quo saepe beatae earum dolore nostrum tenetur delectus similique eaque laborum, sunt
+          provident iusto! At expedita architecto aliquam et. Veniam ipsum deserunt necessitatibus
+          modi provident ipsa sapiente maiores pariatur. Sit necessitatibus itaque tempore, velit
+          ipsam explicabo. Facere, totam?
+        </p>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
