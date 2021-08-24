@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC: Build a survey form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p><em>Help us improve our services by filling out survey below</em></p>
+    </header>
+    <section class="main">
+        <form id="survey-form">
+            <div class="formGroup">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input 
+                    type="text" 
+                    class="required-input"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+            <div class="formGroup">
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input 
+                        type="email"
+                        class="required-input"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                >
+            </div>
+            <div class="formGroup">
+                <label for="age" id="number-label">Age</label>
+                <br>
+                <input 
+                        type="number"
+                        class="required-input"
+                        id="age"
+                        min="13"
+                        max="99"
+                        placeholder="Enter your age"
+                        required
+                >
+            </div>
+            <div class="formGroup">
+                <p class="dropInfo">Your current role</p>
+                <select name="role" id="dropdown">
+                    <option disabled selected value>Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="worker">Worker</option>
+                    <option value="other">Others</option>
+                    <option value="preferno">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="formGroup radioButtons">
+                <p class="radioInfo">Have you ever played video games?</p>
+                
+                <label for="played">
+                    <input 
+                    type="radio" 
+                    name="played"
+                    class="inputRadio"
+                    value="yes"
+                >
+                    Yes
+                </label>
+                
+                <label for="played">
+                    <input 
+                    type="radio" 
+                    name="played"
+                    class="inputRadio"
+                    value="no"
+                >
+                    No
+                </label>
+            </div>
+            
+            <div class="formGroup checkboxes">
+            <p>Favorite video games genre</p>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="action"
+                    >
+                    Action
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="adventure"
+                    >
+                    Adventure
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="rolePlaying"
+                    >
+                    Role playing games
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="strategy"
+                    >
+                    Strategy
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="simulation"
+                    >
+                    Simulation
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="sandbox"
+                    >
+                    Sandbox
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="simulation"
+                    >
+                    Simulation
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="sports"
+                    >
+                    Sports
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="music"
+                    >
+                    Music
+                </label>
+                <label>
+                    <input 
+                        type="checkbox"
+                        class="inputCheckbox"
+                        name="favorite"
+                        value="others"
+                    >
+                    Others
+                </label>
+            </div>
+            <div class="formGroup">
+                <p class="textInfo">Do you have any thought about game nowadays?</p>
+                <textarea name="favorite" id="favgame"  placeholder="Share your opinions"></textarea>
+            </div>
+            <button id="submit">Submit!</button>
+        </form>
+    </section>
+</body>
+</html>
