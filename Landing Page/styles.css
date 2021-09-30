@@ -70,7 +70,7 @@ h1:hover {
 /* Main content start */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(image/smkn1image.jpg);
+    url("https://raw.githubusercontent.com/wahyu-pranata/freecodecamp-project/main/Landing%20Page/images/smkn1image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
